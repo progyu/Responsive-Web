@@ -20,7 +20,7 @@
 
 /* Reset */
 
-body, h1 , p, ul {
+body, h1 , h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -29,7 +29,7 @@ li {
   list-style-type: none;
 }
 
-h1 {
+h1, h2, h3 {
   font-size: 100%;
   font-weight: normal;
 }
@@ -61,7 +61,15 @@ body {
 
 .profile-header,
 .profile-section {
-  padding-bottom: 7%;
+  padding-bottom: 14%;
+}
+
+.profile-section h2 {
+  font-size: 1.8em;
+  border-top: 3px solid;
+  color: orangered;
+  margin-bottom: 20px;
+  padding: 0.5em 0;
 }
 
 .name {
@@ -129,3 +137,23 @@ body {
 .icons a.pinterest { background-position: right top; }
 
 .icons a:hover { background-position-y: bottom;}
+
+.timeline {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.timeline li {
+  padding-bottom: 30px;
+}
+
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.timeline li h3 {
+  color: orange;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.2em;
+}
