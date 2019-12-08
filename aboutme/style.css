@@ -157,3 +157,27 @@ body {
   letter-spacing: 0.1em;
   padding-bottom: 0.2em;
 }
+
+.graph li {
+  background: linear-gradient(90deg, rgba(192,95,229,1) 0%, rgba(51,178,204,1) 100%);
+  color: #111;
+  padding: 0.5em 1em;
+  margin: 0.4em 0;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-weight: 900;
+}
+
+.graph li h3 {
+  font-weight: 900;
+}
+
+.graph li::before {
+  content: attr(data-score);
+  float: right;
+}
+
+.graph li[data-score="100%"] { width: 100%; }
+.graph li[data-score="90%"] { width: 90%; }
+.graph li[data-score="70%"] { width: 70%; }
+.graph li[data-score="60%"] { width: 60%; }
